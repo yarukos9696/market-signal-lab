@@ -1,0 +1,25 @@
+metric,value,notes
+project_name,market-signal-lab,Public sanitized portfolio artifact
+private_system_name,Private research system,Original private research system; raw code/data not published
+baseline_variant,strict_L3_S1_slots10_short_first,Selected for robustness over max-PnL cherry-picking
+validation_style,walk-forward + OOS replay + parity smoke,Time-aware validation and runtime/backtest comparison
+total_wfo_windows_evaluated,23,Chronological WFO/OOS windows in combined analysis
+windows_with_trades,14,Selected robust baseline traded in 14 windows
+wfo_oos_trades,782,Aggregated all-window OOS replay trades
+wfo_oos_net_pnl_usd,2653.36,All-window selected robust baseline
+wfo_oos_win_rate_pct,40.15,All-window selected robust baseline
+wfo_oos_max_drawdown_usd,277.85,All-window selected robust baseline
+wfo_oos_pnl_dd,9.55,All-window selected robust baseline
+negative_traded_windows,3,Selected robust baseline
+worst_window,W12,Selected robust baseline
+worst_window_pnl_usd,-93.39,Selected robust baseline
+max_pnl_variant,pnl_L3_S3_slots10_short_first,Higher aggregate PnL but weaker robustness
+max_pnl_variant_pnl_usd,3606.41,Comparison point only
+max_pnl_variant_max_drawdown_usd,613.23,Comparison point only
+max_pnl_variant_negative_windows,8,Comparison point only
+latest_catchup_window,2026-05-07 to 2026-06-18,Post-selection sanity check; not main WFO result
+latest_catchup_net_pnl_usd,441.80,Historical replay/paper result; not a performance promise
+latest_catchup_trades,37,Aggregated only; no raw trades published
+latest_catchup_win_rate_pct,48.65,Aggregated only
+latest_catchup_max_drawdown_usd,54.61,Aggregated only
+publication_policy,allowlist-only,No credentials/raw data/live logs/model binaries

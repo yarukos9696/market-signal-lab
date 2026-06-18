@@ -1,0 +1,2 @@
+variant,trades,net_pnl_usd,win_rate_pct,max_drawdown_usd,pnl_dd,windows_with_trades,negative_windows,worst_window_pnl_usd,best_window_pnl_usd,public_period
+strict_L3_S1_slots10_short_first,782,2653.36,40.15,277.85,9.55,14,3,-93.39,887.97,2025-04 to 2026-05

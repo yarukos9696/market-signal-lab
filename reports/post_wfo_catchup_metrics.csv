@@ -1,0 +1,2 @@
+window_start,window_end,net_pnl_usd,trades,win_rate_pct,max_drawdown_usd,side_notes,source
+2026-05-07,2026-06-18,441.80,37,48.65,54.61,SHORT-only catch-up replay; no trades after 2026-06-06,private replay summary exported as aggregate

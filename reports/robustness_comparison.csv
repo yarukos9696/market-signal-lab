@@ -1,0 +1,3 @@
+variant,label,net_pnl_usd,max_drawdown_usd,negative_windows,pnl_dd,decision
+selected_robust_baseline,strict_L3_S1_slots10_short_first,2653.36,277.85,3,9.55,selected
+max_pnl_comparison,pnl_L3_S3_slots10_short_first,3606.41,613.23,8,5.88,rejected_for_weaker_robustness

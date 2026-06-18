@@ -1,0 +1,15 @@
+flowchart LR
+    A[Private historical market data] --> B[Point-in-time feature builder]
+    B --> C[Chronological WFO split]
+    C --> D[Train side-specific models]
+    D --> E[OOS candidate scoring]
+    E --> F[Replay with costs + risk gates]
+    F --> G[Window/month/side aggregate metrics]
+    G --> H[Robustness comparison]
+    H --> I[Select baseline or reject variant]
+    I --> J[Paper/live parity smoke]
+    J --> K[Runtime monitoring]
+
+    A -. raw data not published .-> A
+    D -. model binaries not published .-> D
+    G --> P[Public aggregate CSVs]

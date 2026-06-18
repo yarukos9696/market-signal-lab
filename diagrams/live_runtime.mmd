@@ -1,0 +1,16 @@
+flowchart TD
+    A[Exchange market data\nREST / websocket poller] --> B[Normalizer + local market store]
+    B --> C[Rolling feature context]
+    C --> D[LONG / SHORT model inference]
+    D --> E[Candidate ranking + calibration]
+    E --> F[Risk engine\nslots, regimes, fees, stop distance]
+    F --> G{Admissible?}
+    G -- No --> H[Decision log]
+    G -- Yes --> I[Paper/live position manager]
+    I --> J[Open/closed trade ledger]
+    J --> K[Reconciliation checks]
+    K --> L[Heartbeat + monitoring alerts]
+
+    M[Private model artifacts] -. not published .-> D
+    N[Private exchange adapter] -. not published .-> A
+    O[Private credentials] -. never published .-> A
